@@ -1,6 +1,6 @@
 # docker-jhipster-intellij-format
 
-Docker image based on JHipster Docker image that contains IntelliJ code formatter and Maven.
+Docker image based on JHipster Docker image that also contains IntelliJ code formatter and Maven.
 The corresponding Docker Hub image is `mrts/jhipster-intellij-format`.
 
 ## Building the Docker image
