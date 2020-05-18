@@ -1,5 +1,7 @@
 FROM jhipster/jhipster:v6.8.0
 
+USER root
+
 RUN \
   apt-get update && \
   apt-get install -y maven && \
@@ -8,3 +10,5 @@ RUN \
   tar -xf /tmp/intellij-idea.tar.gz --strip-components=1 -C /opt/intellij-idea && \
   rm /tmp/intellij-idea.tar.gz && \
   rm -rf /var/lib/apt/lists/*
+
+USER jhipster
